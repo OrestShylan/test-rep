@@ -207,13 +207,13 @@ body {
   font-style: normal;
 }
 
-.section {
+.portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* SECTION TITLE */
-.section-title.title {
+.portfolio-title.title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
