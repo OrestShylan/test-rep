@@ -1,4 +1,12 @@
-.section-title {
+.job__section {
+  padding-bottom: 94px;
+}
+
+.job__list {
+  display: flex;
+  gap: 30px;
+}
+  .job__title {
     margin-top: 0;
     margin-bottom: 50px;
     color: var(--title-text-color);
@@ -9,17 +17,13 @@
     letter-spacing: 0.03em;
   }
   
-  .section.work {
-    padding-bottom: 94px;
-  }
-  
-  .section-link {
+  .job__link {
     position: relative;
     display: block;
     text-decoration: none;
   }
   
-  .bottom-text {
+  .job__text {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -40,8 +44,4 @@
     text-align: center;
   }
   
-  .list.work {
-    display: flex;
   
-    gap: 30px;
-  }

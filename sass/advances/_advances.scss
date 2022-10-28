@@ -25,14 +25,15 @@
       line-height: 1.71;
       display: flex;
       gap: 30px;
+    }
     
   
   
-    &__item {
+  .advences__item {
     flex-basis: calc(100% / 4 - 30px);
   }
 
-  &__icon {
+  .advences__icon {
     display: flex;
     height: 120px;
     border-radius: 4px;
@@ -42,7 +43,7 @@
     margin-bottom: 30px;
   }
   
-  &__title {
+  .advences__title {
     margin-bottom: 10px;
   
     color: var(--title-text-color);
@@ -53,13 +54,11 @@
     text-transform: uppercase;
   }
   
-  &__text {
+  .advences__text {
     width: 270px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-  }
-  
-  
+  } 
