@@ -63,7 +63,7 @@ border-radius: 0px 0px 4px 4px;
     margin-left: auto;
   }
   
-  .member-soc-list {
+  .member-soc__list {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -71,7 +71,7 @@ border-radius: 0px 0px 4px 4px;
     width: calc((100% - 30px) / 4);
   }
   
-  .member-soc-link {
+  .member-soc__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -80,19 +80,22 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .member-soc-icon {
-    fill: #afb1b8;
-  }
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-  .member-soc-link:hover,
-  .member-soc-link:focus {
-    border-radius: 50%;
+      &__link:hover,
+      &__link:focus 
+    border-radius: 50%
     background-color: var(--accent-text-color);
+      }
+    
+    
+  
+.member-soc-icon {
+    fill: #afb1b8;
+    .member-soc__link:hover &,
+    .member-soc__link:focus & 
+    fill: #ffffff; 
   }
   
-  .member-soc-link:hover .member-soc-icon,
-  .member-soc-link:focus .member-soc-icon {
-    fill: #ffffff;
-  }
+  
+ 
