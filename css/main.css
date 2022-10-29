@@ -437,13 +437,23 @@ body {
   text-align: center;
 }
 
-.team__section {
+.section-team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.team-list {
+  background-color: var(--primary-button-color);
+  border-radius: 0px 0px 4px 4px;
+  width: calc(100% - 7.5px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-section__title {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -452,15 +462,7 @@ body {
   color: var(--title-text-color);
 }
 
-.team__list {
-  background-color: var(--primary-button-color);
-  border-radius: 0px 0px 4px 4px;
-  width: calc(100% - 7.5px);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.member__title {
+.member-title {
   margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -471,9 +473,9 @@ body {
   text-align: center;
 }
 
-.member__profession {
+.member-profession {
   margin-top: 0;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -496,7 +498,7 @@ body {
   margin-left: auto;
 }
 
-.member-soc__list {
+.member-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -519,13 +521,12 @@ body {
   background-color: var(--accent-text-color);
 }
 
-.member-soc__link:hover .member-soc-icon,
-.member-soc__link:focus .member-soc-icon {
-  fill: #ffffff;
-}
-
-.member-soc-icon {
+.member-soc__icon {
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.member-soc__link:hover .member-soc__icon, .member-soc__link:focus .member-soc__icon {
+  fill: #ffffff;
 }
 
 .section__client {
