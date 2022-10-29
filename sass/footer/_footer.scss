@@ -39,16 +39,17 @@
     cursor: pointer;
   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
   }
   
   .footer-link-container {
     margin-left: 70px;
   }
   
-  .footer-link:focus,
-  .footer-link:hover {
-    color: var(--accent-text-color);
-  }
+  
   
   .item-mail {
     margin-bottom: 9px;
@@ -70,12 +71,14 @@
     letter-spacing: 0.03em;
   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-adress:focus,
-  .footer-adress:hover {
+
+  &:focus,
+  &:hover {
     color: var(--accent-text-color);
   }
+  }
+  
+  
   
   .footer-item {
     margin-top: 20px;
@@ -112,6 +115,12 @@
     justify-content: center;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-radius: 50%;
+    background-color: var(--accent-text-color);
+  }
   }
   
   .sub-list {
@@ -121,11 +130,7 @@
     gap: 10px;
   }
   
-  .footer-link-icon:focus,
-  .footer-link-icon:hover {
-    border-radius: 50%;
-    background-color: var(--accent-text-color);
-  }
+  
   .form-footer {
     display: flex;
     gap: 10px;
@@ -148,11 +153,13 @@
     padding-left: 16px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      border-color: var(--accent-text-color);
+    }
   }
   
-  .footer-input-email:focus {
-    border-color: var(--accent-text-color);
-  }
+ 
   
   .footer-sub-text {
     font-weight: 700;
