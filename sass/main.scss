@@ -1,17 +1,17 @@
-@import './portfoliosection/portfoliosection';
+@import './layout/portfoliosection';
 @import './base/common';
 @import './utilitis/varibales';
 @import './utilitis/button';
-@import './hero/hero';
-@import './header/header';
-@import './advances/advances';
-@import './work/work';
-@import './team/team';
-@import './regclient/clients';
-@import './form/form';
-@import './section/section';
-@import './footer/footer';
-@import './backdrop/backdrop.scss';
+@import './layout/hero';
+@import './layout/header';
+@import './layout/advances';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/form';
+@import './layout/section';
+@import './layout/footer';
+@import './layout/backdrop';
 
 
 
