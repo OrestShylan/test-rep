@@ -24,13 +24,23 @@
       font-size: 14px;
       line-height: 1.71;
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
     }
     
   
   
   .advences__item {
-    flex-basis: calc(100% / 4 - 30px);
+    // flex-basis: calc(100% / 4 - 30px);
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
 
   .advences__icon {
@@ -52,13 +62,88 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+      font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+    }
+
+   
+    @media screen and (min-width: 768px){
+width: 270px;
+height: 16px;
+left: 15px;
+top: 690px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: left;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+      margin-bottom: 10px;
+  
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    }
   }
   
   .advences__text {
-    width: 270px;
+    
+    color: var(--primary-text-color);
+    @media screen and (min-width: 480px) { 
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+
+letter-spacing: 0.03em;
+  
+  } 
+
+  @media screen and (min-width: 768px){
+
+    width: 354px;
+height: 48px;
+left: 15px;
+top: 716px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+letter-spacing: 0.03em;
+      
+  }
+
+  @media screen and (min-width: 1200px) {
+
+ width: 270px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-  } 
+  }
+
+  }
