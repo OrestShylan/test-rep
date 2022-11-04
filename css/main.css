@@ -674,7 +674,7 @@ body {
   display: flex;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   align-items: center;
   justify-content: center;
@@ -686,6 +686,21 @@ body {
 .client__link:hover, .client__link:focus {
   fill: var(--accent-text-color);
   border-color: var(--accent-text-color);
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    display: flex;
+    width: 226x;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    gap: 30px;
+  }
 }
 
 .form {
