@@ -480,6 +480,11 @@ body {
 .job__section {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .job__section {
+    display: none;
+  }
+}
 
 .job__list {
   display: flex;
@@ -637,6 +642,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .member-soc-list {
+    margin-top: 10px;
     width: calc((100% - 30px) / 4);
     justify-content: center;
   }

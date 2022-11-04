@@ -128,6 +128,7 @@ letter-spacing: 0.03em;
   }
   
   @media screen and (min-width:1200px) {
+    margin-top: 10px;
     width: calc((100% - 30px) / 4);
     justify-content: center;
     }
