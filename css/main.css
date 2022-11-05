@@ -939,9 +939,11 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-  footer .conteiner {
+  .conteiner {
     display: flex;
     align-items: flex-start;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -1154,6 +1156,7 @@ footer {
     margin-bottom: 0px;
     align-items: flex-start;
     margin-right: 12px;
+    text-align: left;
   }
 }
 
