@@ -14,14 +14,21 @@
     outline: 1px solid #2196f3;
     margin-right: auto;
     margin-left: auto;
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
       width: 480px;
     }
     &.is-open {
       transform: translateX(0);
+      pointer-events: auto;
     }
   }
-  
+  .container-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+  }
   .modal-menu__close-btn {
     position: absolute;
     top: 21px;
