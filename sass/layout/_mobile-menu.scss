@@ -16,6 +16,7 @@
   margin-left: auto;
   @media screen and (max-width: 480px) {
     width: 480px;
+    height: 100%;
   }
   &.is-open {
     transform: translateX(0);
@@ -86,7 +87,7 @@
   color: #757575;
 }
 .modal-menu__nav {
-  margin-bottom: 30vh;
+  margin-bottom: 14vh;
 }
 .modal-menu__contact:not(:last-child) {
   margin-bottom: 32px;
@@ -107,6 +108,7 @@
 }
 .modal-menu__icons {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
 }
 .modal-menu__link {
