@@ -106,10 +106,11 @@
     right: -10px;
   }
 }
-.modal-menu__icons {
+.modal-soc-menu__icons {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
+  list-style: none;
 }
 .modal-menu__link {
   color: #2196f3;
