@@ -7,10 +7,71 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bcg-img.jpg);
+    url(../images/fon/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width: 576px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero/);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/fon/bgpic/Header-img@2x.jpg);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/fon/bgpic/Header-img-tablet.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/fon/bgpic/Header-img-tablet@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/fon/bgpic/Header-img-desctop.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/fon/bgpic/Header-img-desctop@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    padding: 200px 0;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 118px 0;
+    height: 400px;
+  }
+
   }
   .hero-title {
     /* margin-top: 200px; */
@@ -27,6 +88,14 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 360px;
+      font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+    }
   }
 
   .button.primary {
