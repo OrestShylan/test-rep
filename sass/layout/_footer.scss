@@ -12,6 +12,7 @@ footer {
 }
 .footer-adress-text {
   text-align: center;
+  margin-bottom: 60px;
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
@@ -131,7 +132,7 @@ footer {
   }
 }
 .footer-address__list {
-  margin-bottom: 60px;
+  
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -148,7 +149,7 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #fff;
-    margin-top: 10px;
+    
     display: block;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

@@ -4,12 +4,16 @@
   }
   .client__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-bottom: 50px;
+    @media screen and (min-width:1200px) {
+      font-size: 36px;
+      
+    }
   }
   
 .client__item {
@@ -57,8 +61,8 @@
 
   @media screen and (min-width: 768px) {
  display: flex;
- width: 226x;
-    height: 92px;
+ width: 226px;
+ height: 92px;
 
 
   }
