@@ -36,11 +36,12 @@ header {
     width: 768px;
     margin-right: auto;
     margin-left: auto;
+    height: 80px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding: 25px 0;
-
+height: 80px;
     margin-right: auto;
     margin-left: auto;
   }
