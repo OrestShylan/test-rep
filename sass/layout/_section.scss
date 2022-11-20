@@ -4,6 +4,9 @@
     gap: 24px;
     justify-content: center;
     
+    margin-bottom: 20px;
+   
+
     @media screen and (min-width:768px) {
       display: flex;
       gap: 53px;
@@ -19,6 +22,7 @@
     padding: 6px 22px;
     min-width: 124px;
     min-height: 35px;
+    
     @media screen and (min-width:768px) {
       min-width: 132px;
       min-height: 51px;
