@@ -1,17 +1,25 @@
-.portfolio-img{
-  border-radius: 16px;
+
+
+.accessories-img{
+  border-radius: 12px;
   width: 285px;
+  filter: drop-shadow(0px 4px 4px rgba(134, 229, 67, 0.2));
+border-radius: 12px;
+@media screen and (min-width:768px) {
+  &:nth-child(n + 8){
+    display: none;
+  }
   
-
 }
+  }
 
-.portfolio-section {
+.accessories-section {
     padding-top: 94px;
     padding-bottom: 94px;
    background-color:  #01383A;
   }
   
-.portfolio-title.title {
+.accessories-title.title {
   margin-bottom: 8px;
   font-size: 22px;
   line-height: 26px;
@@ -36,7 +44,7 @@
     line-height: 100%;
     text-decoration-line: line-through;
 
-color: #8D9289;
+   color: #8D9289;
   }
 .section-second-text{
   font-size: 18px;
@@ -71,7 +79,7 @@ color: #86E543;
   }
   
   
-  .portfolio-list {
+  .accessories-list {
     // flex-basis: calc((100% - 60px) / 4);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 16px;
@@ -86,12 +94,12 @@ color: #86E543;
   }
   
  
-  .portfolio-wrap {
+  .accessories-wrap {
     position: relative;
     overflow: hidden;
   }
   
-  .portfolio-text {
+  .accessories-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -122,23 +130,70 @@ color: #86E543;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
       opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      .portfolio-list:hover & {
+      .accessories-list:hover & {
         opacity: 1;
       }
       
       
       
-      .portfolio-list:hover & {
+      .accessories-list:hover & {
         transform: translateY(0%);
         border: 1px solid #86E543;
         box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
-        border-radius: 12px;
+       border-radius: 12px;
+       box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
       }
       
   }
 
-  .portfolio-text-wrap {
+  .accessories-text-wrap {
     display: flex;
     gap: 80px;
   }
  
+
+  .slaider-list {
+  display: flex;
+  margin-top: 24px;
+  margin-left: 78px;
+  
+  gap: 16px;
+
+  @media screen and (min-width:768px) {
+    margin-top: 32px;
+    margin-left: 300px;
+    
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-top: 32px;
+    margin-left: 590px;
+    
+  }
+  }
+  
+  .accessories-slaider:first-child{
+    width: 40px;
+    height: 16px;
+  }
+  
+  .accessories-slaider{
+    width: 16px;
+   height: 16px;
+  background: #FFFFFF;
+  border-radius: 12px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:focus,
+      &:hover {
+       
+     
+        background: #86E543;
+box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+border-radius: 16px;
+color: #01383A;
+cursor: pointer;
+  }}
